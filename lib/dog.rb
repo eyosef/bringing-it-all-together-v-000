@@ -67,9 +67,8 @@ class Dog
   end #method
 
   def self.new_from_db(attribute)
-    binding.pry
-    #hash = {name: attribute[1], breed: attribute[2], id: attribute[0]}
-    #new_dog = self.new
+    hash = {name: attribute[1], breed: attribute[2], id: attribute[0]}
+    new_dog = self.new
     # [1, "Pat", "poodle"]
   end
 
