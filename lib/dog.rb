@@ -53,6 +53,8 @@ class Dog
   end
 
   def self.find_by_id(id)
+    dog = DB[:conn].execute("SELECT * FROM dogs WHERE name = ? AND breed = ?", hash[:name], hash[:breed])
+    
     @@all.each { |instance| return instance if instance.id == id}
   end
 
