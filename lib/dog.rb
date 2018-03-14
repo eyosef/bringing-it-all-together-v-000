@@ -30,7 +30,7 @@ class Dog
     DB[:conn].execute(sql)
   end
 
-  def save
+  def save #FIX
     if self.id
       self
     else
