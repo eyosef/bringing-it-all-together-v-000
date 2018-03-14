@@ -58,7 +58,7 @@ class Dog
 
   def self.find_or_create_by(name, breed)
     @@all.each do |instance|
-
+      if instance.name != name && instance.breed != breed
   end
 
 end #class
