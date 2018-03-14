@@ -31,7 +31,7 @@ class Dog
   end
 
   def save #FIX
-    return self
+    self
     # if self.id
     #   self
     # else
