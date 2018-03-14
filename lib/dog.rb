@@ -23,6 +23,8 @@ class Dog
   end
 
   def self.drop_table
+    sql=<<-SQL
+    SQL
   end
 
 end
