@@ -56,7 +56,7 @@ class Dog
     dog = DB[:conn].execute("SELECT * FROM dogs WHERE id = ?", id)
     binding.pry
 
-    if dog
+
 
     @@all.each { |instance| return instance if instance.id == id}
   end
