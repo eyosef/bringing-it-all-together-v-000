@@ -57,7 +57,7 @@ class Dog
 
     if id == dog[0][0]
       new_dog = self.new()
-
+    end
 
 
     #@@all.each { |instance| return instance if instance.id == id}
