@@ -68,7 +68,7 @@ class Dog
 
   def self.new_from_db(attribute)
     hash = {name: attribute[1], breed: attribute[2], id: attribute[0]}
-    new_dog = self.new
+    new_dog = self.new(hash)
     # [1, "Pat", "poodle"]
   end
 
