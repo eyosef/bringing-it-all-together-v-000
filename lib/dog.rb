@@ -68,7 +68,7 @@ class Dog
 
   def self.new_from_db(attribute)
     binding.pry
-    #new_dog = self.
+    #new_dog = self.new
     # [1, "Pat", "poodle"]
   end
 
