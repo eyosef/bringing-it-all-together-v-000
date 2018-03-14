@@ -56,7 +56,7 @@ class Dog
     dog = DB[:conn].execute("SELECT * FROM dogs WHERE id = ?", id)
 
     if id == dog[0][0]
-      self.new_from_db(dog)
+      self.new_from_db(dog.flatten)
     end
 
 
