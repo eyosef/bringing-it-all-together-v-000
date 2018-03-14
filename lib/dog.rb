@@ -7,5 +7,6 @@ class Dog
   def initialize(hash, id = nil)
     @name = hash[:name]
     @breed = hash[:breed]
+    @id = id
   end
 end
