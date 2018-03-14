@@ -59,7 +59,7 @@ class Dog
   def self.find_or_create_by(hash)
     @@all.each do |instance|
       if instance.name != hash[:name] && instance.breed != hash[:breed]
-        self.new(hash)
+        self.create(hash)
       else
         instance
       end #if statement
