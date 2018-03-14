@@ -62,6 +62,6 @@ class Dog
         self.create(hash)
       end #if statement
     end #each iteration
-  end
+  end #method
 
 end #class
