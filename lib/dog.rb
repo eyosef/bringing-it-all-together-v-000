@@ -33,7 +33,7 @@ class Dog
   def save #FIX
 
       self
-
+      binding.pry
       # sql=<<-SQL
       # INSERT INTO dogs (name, breed)
       # SQL
