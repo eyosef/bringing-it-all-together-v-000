@@ -77,7 +77,6 @@ class Dog
 
   def self.find_by_name(name)
     dog = DB[:conn].execute("SELECT * FROM dogs WHERE name = ?", name)
-    binding.pry
 
     if dog[0][1] == name
   end
