@@ -56,10 +56,11 @@ class Dog
     dog = DB[:conn].execute("SELECT * FROM dogs WHERE id = ?", id)
 
     if id == dog[0][0]
+      return 
 
 
 
-    @@all.each { |instance| return instance if instance.id == id}
+    #@@all.each { |instance| return instance if instance.id == id}
   end
 
   def self.find_or_create_by(hash)
