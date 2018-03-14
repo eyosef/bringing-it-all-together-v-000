@@ -31,10 +31,8 @@ class Dog
   end
 
   def save #FIX
-    if self
+
       self
-    else
-      binding.pry
 
       sql=<<-SQL
       INSERT INTO dogs (name, breed)
