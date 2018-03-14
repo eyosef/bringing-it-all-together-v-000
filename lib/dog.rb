@@ -59,8 +59,9 @@ class Dog
   def self.find_or_create_by(hash)
     @@all.each do |instance|
       if instance.name != hash[:name] && instance.breed != hash[:breed]
-      self.create(hash)
-    end
+        self.create(hash)
+      end #if statement
+    end #each iterations
     # hash = {:name=>"teddy", :breed=>"cockapoo"}
   end
 
