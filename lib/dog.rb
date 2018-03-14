@@ -64,8 +64,6 @@ class Dog
       new_dog
     else
       self.create(hash)
-
-
     end
 
   end #method
