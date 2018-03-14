@@ -57,8 +57,8 @@ class Dog
   end
 
   def self.find_or_create_by(hash)
-    
-    
+    DB[:conn].execute("SELECT * FROM dogs WHERE ")
+
     @@all.each do |instance|
       if instance.name != hash[:name] && instance.breed != hash[:breed]
         self.create(hash)
