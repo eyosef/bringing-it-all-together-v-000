@@ -60,6 +60,8 @@ class Dog
     @@all.each do |instance|
       if instance.name != hash[:name] && instance.breed != hash[:breed]
         self.new(hash)
+      else
+        instance
       end #if statement
     end #each iteration
   end #method
