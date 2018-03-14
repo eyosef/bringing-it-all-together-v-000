@@ -78,7 +78,9 @@ class Dog
   def self.find_by_name(name)
     dog = DB[:conn].execute("SELECT * FROM dogs WHERE name = ?", name)
 
-    #if dog[0][1] == name
+    if !dog.empty?
+      new_dog = self.new(hash, dog[0][0])
+      new_dog
   end
 
 end #class
