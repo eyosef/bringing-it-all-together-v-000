@@ -65,7 +65,6 @@ class Dog
     else
       self.create(hash)
     end
-
   end #method
 
   def self.new_from_db(attribute)
