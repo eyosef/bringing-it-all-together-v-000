@@ -53,7 +53,7 @@ class Dog
   end
 
   def self.find_by_id(id)
-    @@all.each do |instance|
+    @@all.each { |instance| return instance if instance.id == id}
       if instance.id == id
         return instance
       end #if statement
