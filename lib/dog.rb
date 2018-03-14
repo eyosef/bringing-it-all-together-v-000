@@ -57,7 +57,7 @@ class Dog
   end
 
   def self.find_or_create_by(hash)
-
+    dog = DB[:connect]
 
     # hash = {:name=>"teddy", :breed=>"cockapoo"}
   end
