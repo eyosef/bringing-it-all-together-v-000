@@ -56,7 +56,9 @@ class Dog
     @@all.each { |instance| return instance if instance.id == id}
   end
 
-  def self.find_or_create_by
+  def self.find_or_create_by(name,breed)
+    @@all.each do |instance|
+      
   end
 
 end #class
