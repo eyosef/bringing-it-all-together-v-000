@@ -62,6 +62,8 @@ class Dog
     @@all.each do |instance|
       if instance.name != name && instance.breed != breed
         self.create(hash)
+      end #if statement
+    end #each iteration
 
   end
 
