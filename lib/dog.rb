@@ -10,5 +10,7 @@ class Dog
     @id = id
   end
 
+  def self.create_table
+  end
 
 end
