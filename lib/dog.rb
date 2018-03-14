@@ -31,7 +31,9 @@ class Dog
   end
 
   def save #FIX
-    self
+    if self
+      self
+    else
       sql=<<-SQL
       INSERT INTO dogs(name, breed)
       VALUES(?, ?)
