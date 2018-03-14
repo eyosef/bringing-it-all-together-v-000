@@ -44,4 +44,7 @@ class Dog
       end
   end #save
 
+  def self.create
+  end
+
 end #class
