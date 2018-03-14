@@ -61,7 +61,7 @@ class Dog
     binding.pry
 
     if !dog.empty?
-      new_dog = self.new(hash, dog.id)
+      new_dog = self.new(hash, dog[0][0])
     end
 
   end #method
