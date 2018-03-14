@@ -61,8 +61,7 @@ class Dog
       if instance.name != hash[:name] && instance.breed != hash[:breed]
         self.create(hash)
       end #if statement
-    end #each iterations
-    # hash = {:name=>"teddy", :breed=>"cockapoo"}
+    end #each iteration
   end
 
 end #class
