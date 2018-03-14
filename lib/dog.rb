@@ -9,4 +9,6 @@ class Dog
     @breed = hash[:breed]
     @id = id
   end
+
+
 end
