@@ -63,8 +63,6 @@ class Dog
       new_dog = self.new(hash, dog.id)
     end
 
-
-
   end #method
 
   def self.new_from_db(attribute)
