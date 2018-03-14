@@ -78,7 +78,7 @@ class Dog
   def self.find_by_name(name)
     dog = DB[:conn].execute("SELECT * FROM dogs WHERE name = ?", name)
 
-    i#f dog[0][1] == name
+    #if dog[0][1] == name
   end
 
 end #class
