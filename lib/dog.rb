@@ -4,7 +4,7 @@ class Dog
 
   attr_accessor :name, :breed
 
-  def initialize(hash)
+  def initialize(hash, id = nil)
     @name = hash[:name]
     @breed = hash[:breed]
   end
