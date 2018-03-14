@@ -60,7 +60,7 @@ class Dog
     hash = {name: name, breed: breed}
 
     @@all.each do |instance|
-      if instance.name != hash[:name] && instance.breed != breed
+      if instance.name != hash[:name] && instance.breed != hash[:breed]
         self.create(hash)
       end #if statement
     end #each iteration
