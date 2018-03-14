@@ -36,7 +36,6 @@ class Dog
     else
       sql=<<-SQL
       INSERT INTO dogs (name, breed)
-      VALUES(?, ?)
       SQL
                   binding.pry
       DB[:conn].execute(sql, self.name, self.breed)
