@@ -70,7 +70,6 @@ class Dog
     hash = {name: attribute[1], breed: attribute[2]}
     new_dog = self.new(hash, attribute[0])
     new_dog
-    # [1, "Pat", "poodle"]
   end
 
 end #class
