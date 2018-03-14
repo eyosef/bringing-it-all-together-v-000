@@ -10,6 +10,7 @@ class Dog
     @name = hash[:name]
     @breed = hash[:breed]
     @id = id
+    @@all << self
   end
 
   def self.create_table
