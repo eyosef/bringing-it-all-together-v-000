@@ -33,13 +33,13 @@ class Dog
   def save #FIX
 
       self
-      binding.pry
-      # sql=<<-SQL
-      # INSERT INTO dogs (name, breed)
-      # SQL
-      #
-      # DB[:conn].execute(sql, self.name, self.breed)
-      # @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")
+      
+      sql=<<-SQL
+      INSERT INTO dogs (name, breed)
+      SQL
+      
+      DB[:conn].execute(sql, self.name, self.breed)
+      @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")
 
   end #save
 
