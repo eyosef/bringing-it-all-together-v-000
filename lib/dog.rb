@@ -66,4 +66,7 @@ class Dog
     end #each iteration
   end #method
 
+  def self.new_from_db 
+  end
+
 end #class
