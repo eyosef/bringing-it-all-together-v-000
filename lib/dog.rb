@@ -55,8 +55,8 @@ class Dog
   def self.find_by_id(id)
     @@all.each do |instance|
       if instance.id == id
-        return instance 
-      end #if statement 
+        return instance
+      end #if statement
     end #each iteration
 
   end
