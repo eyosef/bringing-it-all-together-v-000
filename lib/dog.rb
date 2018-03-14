@@ -13,7 +13,7 @@ class Dog
   def self.create_table
     sql=<<-SQL
     CREATE TABLE dogs(
-      id INTEGERY PRIMARY KEY
+      id INTEGER PRIMARY KEY
     )
     SQL
   end
