@@ -32,6 +32,9 @@ class Dog
 
   def save #FIX
     self
+
+
+
     # if self.id
     #   self
     # else
