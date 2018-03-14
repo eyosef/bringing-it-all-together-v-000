@@ -34,6 +34,8 @@ class Dog
     if self
       self
     else
+      binding.pry
+
       sql=<<-SQL
       INSERT INTO dogs (name, breed)
       SQL
