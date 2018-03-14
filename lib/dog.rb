@@ -53,6 +53,8 @@ class Dog
   end
 
   def self.find_by_id(id)
+    @@all.each do |instance|
+    
   end
 
 end #class
