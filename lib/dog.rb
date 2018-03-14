@@ -54,13 +54,9 @@ class Dog
 
   def self.find_by_id(id)
     dog = DB[:conn].execute("SELECT * FROM dogs WHERE id = ?", id)
-
     if id == dog[0][0]
       self.new_from_db(dog.flatten)
     end
-
-
-    #@@all.each { |instance| return instance if instance.id == id}
   end
 
   def self.find_or_create_by(hash)
