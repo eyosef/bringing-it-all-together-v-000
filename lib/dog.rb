@@ -62,6 +62,8 @@ class Dog
     if !dog.empty?
       new_dog = self.new(hash, dog[0][0])
       new_dog
+
+  
     end
 
   end #method
